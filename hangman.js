@@ -45,4 +45,4 @@ function next(word, guesses) {
     });
 }
 
-next("jazz", []);
+next("hottentottententententoonstelling", []);
