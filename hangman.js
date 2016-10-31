@@ -40,9 +40,8 @@ function next(word, guesses) {
 
     // Ask for the next letter, the function given will run after the user hits return
     rl.question("next letter? ", answer => {
-        answer = answer.trim();
         console.log("player wrote:", answer);
-        next(word, guesses.concat([answer]));
+        next(word, guesses.concat(answer.trim().split("")));
     });
 }
 
